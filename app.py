@@ -108,8 +108,8 @@ def simulate(TL, CE):
 
 # Button to run simulation
 if st.button('Run Simulation'):
-    # Assuming CW is used as CL before TL and as CE after TL in your model
-    df_combined, first_10, first_90, first_10_bass, first_90_bass, cwbm_crosses = simulate(p, qW, qA, m, CW, TL, time_steps, p_bass, q_bass)
+    # Pass CL and CE to the simulate function
+    df_combined, first_10, first_90, first_10_bass, first_90_bass, cwbm_crosses = simulate(TL, CE)
     
     st.write("Simulation Results")
     st.dataframe(df_combined)
