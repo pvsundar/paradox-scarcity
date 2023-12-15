@@ -12,14 +12,14 @@ time_steps = 25  # Global definition to be used in the sidebar
 p_bass = 0.03
 q_bass = 0.35
 
-st.title('Diffusion Model: SCARCITY PARADOX Simulation')
+st.title('Diffusion Model JAMS APP: SCARCITY PARADOX Simulation')
 
 # Display fixed value parameters
 st.sidebar.header('Fixed Model Parameters')
 st.sidebar.markdown('''
 - **p**: 0.03 (Innovation coefficient)
-- **qW**: 0.9 (Imitation coefficient for word-of-mouth)
-- **qA**: 0.35 (Imitation coefficient for advertising effect)
+- **qW**: 0.9 (Imitation coefficient for Waiting Customers)
+- **qA**: 0.35 (Imitation coefficient for Adopters)
 - **m**: 40,001 (Market potential)
 - **CL**: 1,000 (Initial industry capacity)
 - **Time Steps**: 25
